@@ -1,89 +1,465 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.19.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.19.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.19.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./CSS/global.css" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap"
+    />
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <div class="homepage">
+      <div class="footer">
+        <img class="background-icon" alt="" src="./IMG/background.svg" />
+        <div class="cooperate">
+          <div class="tuyn-i-l">Tuyển đại lý</div>
+          <div class="bun-bn-bun-s">Buôn bán-Buôn sỉ</div>
+          <div class="cung-cp-hng">Cung cấp hàng cho Zanado</div>
+          <div class="hp-tc">Hợp tác</div>
+        </div>
+        <div class="support">
+          <div class="mua-hng-online">Mua hàng online</div>
+          <div class="lin-h">Liên hệ</div>
+          <div class="chm-sc-khch">Chăm sóc khách hàng</div>
+          <div class="h-tr">Hỗ Trợ</div>
+          <div class="hi-p">Hỏi đáp</div>
+        </div>
+        <div class="contact-info">
+          <div class="contact">
+            <img class="contact-child" alt="" src="./IMG/frame-10.svg" /><img
+              class="contact-child"
+              alt=""
+              src="./IMG/frame-11.svg"
+            /><img class="contact-child" alt="" src="./IMG/frame-12.svg" />
+            <div class="in-wrapper"><b class="in">in</b></div>
+          </div>
+          <div class="theo-di-trang">
+            Theo dõi trang cá nhân của Zanado để nhận những ưu đãi khủng nhé
+          </div>
+          <img
+            class="logo-z-r-2-1-icon"
+            alt=""
+            src="./IMG/logo-z-r-2-11@2x.png"
+          />
+        </div>
+        <div class="contact-text">
+          <div class="cng-ty-cp-container">
+            <p class="cng-ty-cp">CÔNG TY CP ZANADO</p>
+            <p class="cng-ty-cp">GPKD số: 0311304610</p>
+            <p class="cng-ty-cp">Do Sở KH & ĐT TP.HCM cấp ngày 02/11/2011</p>
+            <p class="cng-ty-cp">
+              Trụ sở chính: 1278 Quang Trung, Phường 14, Gò Vấp, TP.HCM
+            </p>
+            <p class="cng-ty-cp">Email: support@zanado.com</p>
+            <p class="cng-ty-cp">Điện thoại: 19006049</p>
+          </div>
+        </div>
+      </div>
+      <div class="headers">
+        <div class="menu">
+          <div class="menu-child"></div>
+          <div class="thi-trang-nam">
+            THỜI TRANG NAM - THỜI TRANG NỮ - CÔNG SỞ ONLINE - Hotline:
+            1900.6049(08h00 - 22h00)
+          </div>
+          <img
+            class="download-5-2"
+            alt=""
+            src="./IMG/download-5-2@2x.png"
+          /><img
+            class="logo-z-r-2-1-icon1"
+            alt=""
+            src="./IMG/logo-z-r-2-16@2x.png"
+          />
+          <div class="lm-p" id="lMPText">LÀM ĐẸP</div>
+          <div class="thng-hiu" id="brands_window">THƯƠNG HIỆU</div>
+          <div class="thi-trang-n" id="women_clothes_window">THỜI TRANG NỮ</div>
+          <div class="thi-trang-nam1" id="men_clothes_window">THỜI TRANG NAM</div>
+        </div>
+        <div class="accountinfo">
+          <img
+            class="ti-xung-4-1"
+            alt=""
+            src="./IMG/ti-xung-4-1@2x.png"
+            id="tiXung41"
+          /><img
+            class="ti-xung-2-1"
+            alt=""
+            src="./IMG/ti-xung-2-1@2x.png"
+            id="tiXung21"
+          />
+          <div class="thng-bo">Thông báo</div>
+          <div class="gi-hng">Giỏ Hàng</div>
+          <div class="ti-khon">Tài Khoản</div>
+          <div class="ng-nhp">Đăng nhập</div>
+          <img
+            class="download-3-1"
+            alt=""
+            src="./IMG/download-3-1@2x.png"
+            id="download31"
+          /><img
+            class="ti-xung-1-1"
+            alt=""
+            src="./IMG/ti-xung-1-1@2x.png"
+            id="tiXung11"
+          />
+        </div>
+        <div class="tm-kim-ton">Tìm kiếm toàn bộ cửa hàng ở đây</div>
+      </div>
+      <div class="container">
+        <div class="special-offer">
+          <div class="ch-c-trn">CHỈ CÓ TRÊN</div>
+          <img
+            class="logo-z-r-2-1-icon2"
+            alt=""
+            src="./IMG/logo-z-r-2-2@2x.png"
+          /><img
+            class="file-1499508277-1-icon"
+            alt=""
+            src="./IMG/file1499508277-1@2x.png"
+          /><img
+            class="file-1497329251-1-icon"
+            alt=""
+            src="./IMG/file1497329251-1@2x.png"
+          /><img
+            class="file-1497329143-1-icon"
+            alt=""
+            src="./IMG/file1497329143-1@2x.png"
+          />
+        </div>
+        <div class="sale">
+          <img
+            class="file-1498300347-1-icon"
+            alt=""
+            src="./IMG/file1498300347-1@2x.png"
+          /><img
+            class="file-1505457734-1-icon"
+            alt=""
+            src="./IMG/file1505457734-1@2x.png"
+          /><img
+            class="file-1499481118-1-icon"
+            alt=""
+            src="./IMG/file1499481118-1@2x.png"
+          />
+          <div class="khuyn-mi-cc">Khuyến mãi cực khủng</div>
+        </div>
+        <div class="brands">
+          <img
+            class="file-1479969186-1-icon"
+            alt=""
+            src="./IMG/file1479969186-1@2x.png"
+          /><img
+            class="file-1483176330-1-icon"
+            alt=""
+            src="./IMG/file1483176330-1@2x.png"
+          /><img
+            class="file-1483176436-1-icon"
+            alt=""
+            src="./IMG/file1483176436-1@2x.png"
+          /><img
+            class="file-1479969141-1-icon"
+            alt=""
+            src="./IMG/file1479969141-1@2x.png"
+          /><img
+            class="file-1483176254-1-icon"
+            alt=""
+            src="./IMG/file1483176254-1@2x.png"
+          /><img
+            class="file-1483176903-1-icon"
+            alt=""
+            src="./IMG/file1483176903-1@2x.png"
+          />
+        </div>
+        <div class="thng-hiu-u">Thương hiệu ưu thích</div>
+        <div class="mua-hng-thi-container">
+          <p class="cng-ty-cp">
+            <a
+              class="blank-line1"
+              href="https://www.zanado.com/ao-thun-nam-50.html"
+              target="_blank"
+              ><span class="blank-line2">&nbsp;</span></a
+            >
+          </p>
+          <p class="cng-ty-cp">
+            <span class="mua-hng-thi"
+              >Mua hàng Thời Trang Online tại Zanado</span
+            >
+          </p>
+          <p class="cng-ty-cp"><span class="ra-i-vo">&nbsp;</span></p>
+          <p class="cng-ty-cp"><span class="ra-i-vo">&nbsp;</span></p>
+          <p class="cng-ty-cp">
+            <span class="ra-i-vo"
+              >Ra đời vào cuối năm 2011 bắt đầu từ tên Siêu Mua, Zanado.com đã
+              sớm có một vị trí vững chắc trên thị trường thương mại điện tử
+              trong nước, trở thành shop mua sắm hàng thời trang online đầy tin
+              cậy, tiện lợi cho khách hàng trên toàn quốc. Là một website thời
+              trang online bán hàng trực tuyến chúng tôi phục vụ nhu cầu mua sắm
+              trực tuyến đồng thời bán buôn, bán sỉ và gia công may mặc bao gồm:
+              quần áo, thời trang hàng hiệu, thời trang nam, thời trang nữ, quần
+              áo công sở, thời trang công sở, phụ kiện thời trang nam nữ... bất
+              cứ khi nào khách hàng có nhu cầu mua sắm hàng thời trang online
+              chất lượng giá rẻ đẹp thì Zanado là 1 sựa lựa chọn tuyệt vời với
+              hàng chục hotdeal mỗi ngày.</span
+            >
+          </p>
+          <p class="cng-ty-cp">
+            <span class="ra-i-vo"
+              >Mua sắm thời trang là nhu cầu thiết yếu của cả phái mạnh và phái
+              đẹp. Thấu hiểu điều này, Zanado.com sẽ mang đến cho bạn nhiều bộ
+              sưu tập thời trang 2023 hot nhất từ các thương hiệu trong và ngoài
+              nước. Bên cạnh đó, thời trang cao cấp Hàn Quốc từ các nhãn hàng
+              thời trang nổi tiếng cũng là một thế mạnh của cửa hàng mua sắm
+              thời trang online hàng đầu này. Ngoài ra, Zanado.com cũng sẽ gợi ý
+              cho bạn những món quà thật ý nghĩa để tặng người thân, bạn bè.
+              Chúng tôi sẽ làm bạn hài lòng với sự lựa chọn của mình bằng giá
+              tốt nhất và chất lượng dịch vụ hoàn hảo. Mua hàng trực tuyến giá
+              rẻ chưa bao giờ dễ dàng đến thế với Zanado.com với Thời Trang Nam,
+              Thời Trang Nữ, Thời Trang Công Sở được cập nhật mỗi ngày.</span
+            >
+          </p>
+          <p class="cng-ty-cp"><span class="ra-i-vo">&nbsp;</span></p>
+          <p class="cng-ty-cp">
+            <span class="ra-i-vo"
+              >Bạn có thể thoải mái mua sắm thời trang cao cấp hay thời trang
+              hàng hiệu và thậm chí cả thời trang cao cấp Việt Nam tại
+              Zanado.com. Đa dạng mẫu mã, chủng loại và giá cả, bạn sẽ có nhiều
+              lựa chọn cho phong cách thời trang của riêng mình. Đừng bỏ lỡ
+              những đợt giảm giá khủng của chúng tôi để sắm cho mình những deal
+              hot nhất mùa này. Chúng tôi giao hàng tận nơi ở tại các khu vực:
+              TP Hồ Chí Minh, An Giang, Bà Rịa - Vũng Tàu, Bắc Cạn, Bắc Giang,
+              Bạc Liêu, Bắc Ninh, Bến Tre, Bình Định, Bình Dương, Bình Phước,
+              Bình Thuận, Cà Mau, Cần Thơ, Cao Bằng, Đà Nẵng, Đắc Lắc, Đắk Nông,
+              Điện Biên, Đồng Nai, Đồng Tháp, Gia Lai, Hà Giang, Hà Nam, Hà Nội,
+              Hà Tĩnh, Hải Dương, Hải Phòng, Hậu Giang, Hòa Bình, Hưng Yên,
+              Khánh Hòa, Kiên Giang, Kon Tum, Lai Châu, Lâm Đồng, Lạng Sơn, Lào
+              Cai, Long An, Nam Định, Nghệ An, Ninh Bình, Ninh Thuận, Phú Thọ,
+              Phú Yên, Quảng Bình, Quảng Nam, Quảng Ngãi, Quảng Ninh, Quảng Trị,
+              Sóc Trăng, Sơn La, Tây Ninh, Thái Bình, Thái Nguyên, Thanh Hoá,
+              Thừa Thiên - Huế, Tiền Giang, Trà Vinh, Tuyên Quang, Vĩnh Long,
+              Vĩnh Phúc, Yên Bái, Bà Rịa, Bảo Lộc, Biên Hòa, Buôn Ma Thuột, Cam
+              Ranh, Cao Lãnh, Cẩm Phả, Châu Đốc, Đà Lạt, Điện Biên Phủ, Đông Hà,
+              Đồng Hới, Hạ Long, Hội An, Huế, Long Xuyên, Móng Cái, Mỹ Tho, Nha
+              Trang, Phan Rang - Tháp Chàm, Phan Thiết, Phủ Lý, Pleiku, Quy
+              Nhơn, Rạch Giá, Sa Đéc, Tam Kỳ, Tân An, Thanh Hóa, Thủ Dầu Một,
+              Tuy Hòa, Uông Bí, Vị Thanh, Việt Trì, Vinh, Vĩnh Yên, Vũng Tàu.
+              Thanh toán khi nhận hàng, 7 ngày đổi trả nếu không hài lòng về sản
+              phẩm cùng với chất lượng dịch vụ nhanh, an toàn nhất được chứng
+              nhận bởi nhiều cơ quan và tổ chức có uy tín trong và ngoài
+              nước.</span
+            >
+          </p>
+        </div>
+        <div class="suggestion">
+          <img
+            class="file-1502679592-1-icon"
+            alt=""
+            src="./IMG/file1502679592-1@2x.png"
+          />
+          <div class="gi-cho">Gợi ý cho bạn</div>
+        </div>
+        <div class="hot-product">
+          <div class="hng-hot-trn">Hàng hot trên ZANADO</div>
+          <img
+            class="screenshot-121-1"
+            alt=""
+            src="./IMG/screenshot-121-1@2x.png"
+          /><img
+            class="screenshot-120-1"
+            alt=""
+            src="./IMG/screenshot-120-1@2x.png"
+          /><img
+            class="screenshot-119-1"
+            alt=""
+            src="./IMG/screenshot-119-1@2x.png"
+          /><img
+            class="screenshot-118-1"
+            alt=""
+            src="./IMG/screenshot-118-1@2x.png"
+          /><img
+            class="screenshot-123-1"
+            alt=""
+            src="./IMG/screenshot-123-1@2x.png"
+          />
+        </div>
+        <div class="new-arrivals">
+          <div class="hng-mi-v">Hàng mới về</div>
+          <img
+            class="screenshot-129-1"
+            alt=""
+            src="./IMG/screenshot-129-1@2x.png"
+          /><img
+            class="screenshot-128-1"
+            alt=""
+            src="./IMG/screenshot-128-1@2x.png"
+          /><img
+            class="screenshot-127-1"
+            alt=""
+            src="./IMG/screenshot-127-1@2x.png"
+          /><img
+            class="screenshot-126-1"
+            alt=""
+            src="./IMG/screenshot-126-1@2x.png"
+          /><img
+            class="screenshot-124-1"
+            alt=""
+            src="./IMG/screenshot-124-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="banners">
+        <img
+          class="file-1506411085-1-icon"
+          alt=""
+          src="./IMG/file1506411085-1@2x.png"
+        /><img
+          class="banner-thoi-trang-nam-1-icon"
+          alt=""
+          src="./IMG/bannerthoitrangnam-1@2x.png"
+        /><img class="new16-1-icon" alt="" src="./IMG/new16-1@2x.png" />
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <div id="sIGINContainer" class="popup-overlay" style="display: none">
+      <div class="sigin">
+        <img class="sigin-child" alt="" src="./IMG/rectangle-93.svg" /><img
+          class="sigin-item"
+          alt=""
+          src="./IMG/line-1.svg"
+        /><img class="sigin-inner" alt="" src="./IMG/rectangle-95.svg" />
+        <div class="ng-nhp3">ĐĂNG NHẬP</div>
+        <div class="sigin-child1"></div>
+        <img class="download-4-1" alt="" src="./IMG/download-4-1@2x.png" />
+        <div class="emails-in-thoi">Email,số điện thoại</div>
+        <div class="mt-khu1">Mật khẩu</div>
+        <div class="sigin-child2"></div>
+        <div class="ng-nhp4">ĐĂNG NHẬP</div>
+        <div class="qun-mt-khu">Quên mật khẩu</div>
+        <div class="cha-c-ti">Chưa có tài khoản?</div>
+        <div class="hoc">Hoặc</div>
+        <img
+          class="screenshot-87-1"
+          alt=""
+          src="./IMG/screenshot-87-1@2x.png"
+        /><img
+          class="screenshot-88-1"
+          alt=""
+          src="./IMG/screenshot-88-1@2x.png"
+        /><img
+          class="screenshot-89-1"
+          alt=""
+          src="./IMG/screenshot-89-1@2x.png"
+        /><img class="sigin-child3" alt="" src="./IMG/line-11.svg" />
+        <div class="ng-k-ti" id="SignIn">Đăng ký tại đây</div>
+        <img
+          class="download-6-2"
+          alt=""
+          src="./IMG/download-6-2@2x.png"
+          id="popupdownload62"
+        />
+      </div>
+    </div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+      var SignIn = document.getElementById("SignIn");
+      if (SignIn) {
+        SignIn.addEventListener("click", function (e) {
+          window.location.href = "./sign-up.html";
+        });
+      }
+      
+      var popupdownload62 = document.getElementById("popupdownload62");
+      if (popupdownload62) {
+        popupdownload62.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var lMPText = document.getElementById("lMPText");
+      if (lMPText) {
+        lMPText.addEventListener("click", function (e) {
+          window.location.href = "./make-up.html";
+        });
+      }
+      
+      var brands_window = document.getElementById("brands_window");
+      if (brands_window) {
+        brands_window.addEventListener("click", function (e) {
+          window.location.href = "./brands.html";
+        });
+      }
+      
+      var women_clothes_window = document.getElementById("women_clothes_window");
+      if (women_clothes_window) {
+        women_clothes_window.addEventListener("click", function (e) {
+          window.location.href = "./women-clothes.html";
+        });
+      }
+      
+      var men_clothes_window = document.getElementById("men_clothes_window");
+      if (men_clothes_window) {
+        men_clothes_window.addEventListener("click", function (e) {
+          window.location.href = "./men-clothes.html";
+        });
+      }
+      
+      var tiXung41 = document.getElementById("tiXung41");
+      if (tiXung41) {
+        tiXung41.addEventListener("click", function (e) {
+          window.location.href = "./s-i-g-i-n.html";
+        });
+      }
+      
+      var tiXung21 = document.getElementById("tiXung21");
+      if (tiXung21) {
+        tiXung21.addEventListener("click", function (e) {
+          window.location.href = "./s-i-g-i-n.html";
+        });
+      }
+      
+      var download31 = document.getElementById("download31");
+      if (download31) {
+        download31.addEventListener("click", function () {
+          var popup = document.getElementById("sIGINContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var tiXung11 = document.getElementById("tiXung11");
+      if (tiXung11) {
+        tiXung11.addEventListener("click", function (e) {
+          window.location.href = "./s-i-g-i-n.html";
+        });
+      }
+      </script>
+      <script src="./firebase.js"></script>
   </body>
 </html>
