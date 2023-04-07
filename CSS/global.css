@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-21xl: 2.5rem;
+  --font-size-5xl: 1.5rem;
+  --font-size-17xl: 2.25rem;
+  --font-size-xs: 0.75rem;
+  --font-size-base: 1rem;
+  --font-size-3xl: 1.38rem;
+  --font-size-2xs: 0.69rem;
+  --font-size-13xl: 2rem;
+  --font-size-29xl: 3rem;
+  --font-size-9xl: 1.75rem;
+  --font-size-xl: 1.25rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red-100: #f30c0c;
+  --color-red-200: #fe0505;
+  --color-red-300: #fd0202;
+  --color-gray-100: #8e8e8e;
+  --color-gray-200: #7a7a7a;
+  --color-gray-300: #090808;
+  --color-crimson: #dd1a1a;
+  --color-gainsboro: #d9d9d9;
+  --color-lightcoral: #e47777;
+  --color-goldenrod: #eec124;
+  --color-khaki: #ebd96b;
+  --color-darkturquoise-100: rgba(24, 221, 234, 0.66);
+  --color-deepskyblue-100: #16bcf0;
+  --color-royalblue-100: #1745bb;
+
+  /* Gaps */
+  --gap-sm: 0.88rem;
+
+  /* Paddings */
+  --padding-6xs-2: 0.39rem;
+  --padding-sm-2: 0.83rem;
+  --padding-3xs: 0.63rem;
+
+  /* border radiuses */
+  --br-mini: 15px;
+}
